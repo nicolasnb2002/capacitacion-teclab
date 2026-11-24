@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Capacitación Teclab · Proceso de venta</title>
+<style>
+:root{--navy:#0b1f4d;--blue:#1f5eff;--sky:#e8efff;--ink:#1b2430;--muted:#5b6675;--line:#e3e8f0;--bg:#f6f8fc;--card:#fff;--ok:#11845b;--warn:#b26a00;--r:14px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--blue)}
+header.top{background:linear-gradient(135deg,var(--navy),#1a3a8f);color:#fff;padding:28px 20px}
+header.top .wrap{max-width:1180px;margin:0 auto}
+header.top h1{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.2rem)}
+header.top p{margin:0;opacity:.9;max-width:760px}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:2px 12px;font-size:.8rem;margin-bottom:10px}
+.layout{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:250px 1fr;gap:28px;padding:24px 20px 60px}
+nav.side{position:sticky;top:16px;align-self:start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px}
+nav.side a{display:block;padding:7px 10px;border-radius:9px;color:var(--ink);text-decoration:none;font-size:.92rem}
+nav.side a:hover{background:var(--sky)}nav.side a.on{background:var(--blue);color:#fff}
+.menu-btn{display:none}
+main section{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px clamp(16px,3vw,32px);margin-bottom:22px;scroll-margin-top:16px}
+h2{margin:0 0 4px;color:var(--navy);font-size:1.45rem}h3{color:var(--navy);margin:22px 0 8px;font-size:1.1rem}
+.lead{color:var(--muted);margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.tile{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fff}
+.tile b{display:block;color:var(--navy);margin-bottom:4px}
+.tile small{color:var(--muted)}
+.note{border-left:4px solid var(--warn);background:#fff7e8;border-radius:0 10px 10px 0;padding:12px 14px;margin:14px 0}
+.tip{border-left:4px solid var(--blue);background:var(--sky);border-radius:0 10px 10px 0;padding:12px 14px;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:.93rem}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg);color:var(--navy);font-weight:600}
+.tablewrap{overflow-x:auto}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{position:relative;padding:0 0 18px 50px}
+.steps li:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:700}
+.steps li:not(:last-child):after{content:"";position:absolute;left:16px;top:36px;bottom:2px;width:2px;background:var(--line)}
+.steps b{color:var(--navy)}
+.q{background:var(--bg);border-radius:10px;padding:10px 12px;margin:6px 0;font-style:italic}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}
+.controls input,.controls select{padding:9px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff;min-width:200px;flex:1}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;cursor:pointer;font:inherit;font-size:.9rem}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.car{border:1px solid var(--line);border-radius:12px;padding:16px;background:#fff;display:flex;flex-direction:column;gap:6px}
+.car h4{margin:0;color:var(--navy);font-size:1.02rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.75rem;border-radius:999px;padding:2px 9px;background:var(--sky);color:var(--navy)}
+.tag.new{background:#e5f6ee;color:var(--ok)}.tag.co{background:#f1ecff;color:#5b3cc4}
+.car ul{margin:2px 0 0;padding-left:18px;font-size:.9rem}
+.car .k{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-top:6px}
+.car .alert{font-size:.85rem;color:var(--warn)}
+details{border:1px solid var(--line);border-radius:12px;margin:8px 0;background:#fff}
+details summary{cursor:pointer;padding:12px 14px;font-weight:600;color:var(--navy);list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary:after{content:"＋";float:right;color:var(--muted)}details[open] summary:after{content:"－"}
+details .body{padding:0 14px 14px}
+.script{position:relative;background:#0f172a;color:#e2e8f0;border-radius:12px;padding:16px 16px 16px;white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86rem;line-height:1.55;margin:8px 0 14px}
+.copy{position:absolute;top:8px;right:8px;background:#1f2a44;color:#fff;border:1px solid #33415f;border-radius:8px;padding:4px 10px;cursor:pointer;font-size:.78rem}
+.script .lbl{display:block;color:#93c5fd;font-weight:700;margin-bottom:6px;font-family:system-ui,sans-serif}
+.check li{list-style:none;margin:6px 0}.check{padding:0}
+.check label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.check input{margin-top:5px;width:18px;height:18px}
+.progress{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:8px 0 14px}
+.progress span{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
+.quiz .item{border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0}
+.quiz .opts{display:grid;gap:6px;margin-top:8px}
+.quiz button.opt{text-align:left;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px;font:inherit;cursor:pointer}
+.quiz button.ok{background:#e5f6ee;border-color:var(--ok)}.quiz button.bad{background:#fdecec;border-color:#d14343}
+.quiz .exp{font-size:.9rem;color:var(--muted);margin-top:8px;display:none}
+.score{font-weight:700;color:var(--navy)}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:10px 20px 40px}
+@media (max-width:860px){
+ .layout{grid-template-columns:1fr;padding-top:12px}
+ nav.side{position:fixed;inset:auto 12px 12px 12px;top:auto;z-index:20;max-height:60vh;overflow:auto;display:none;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+ nav.side.open{display:block}
+ .menu-btn{display:block;position:fixed;right:14px;bottom:14px;z-index:21;background:var(--navy);color:#fff;border:none;border-radius:999px;padding:12px 18px;font:inherit;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+}
+@media print{nav.side,.menu-btn,.copy{display:none}.layout{display:block}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<span class="badge">Uso interno · Equipo comercial</span>
+<h1>Capacitación Teclab: cómo asesorar y vender</h1>
+<p>Guía paso a paso para asesores nuevos, armada con el material del Dashboard Comercial de Teclab. Se enfoca en el proceso de venta: promos, financiación y valores se consultan siempre en el Portal y el Cotizador vigentes.</p>
+</div></header>
+
+<div class="layout">
+<nav class="side" id="nav">
+<a href="#teclab">1. Qué es Teclab</a>
+<a href="#dashboard">2. Usar el dashboard</a>
+<a href="#carreras">3. Perfil por carrera</a>
+<a href="#proceso">4. Proceso de venta</a>
+<a href="#objeciones">5. Objeciones</a>
+<a href="#llamada">6. Guion de llamada</a>
+<a href="#whatsapp">7. Guion de WhatsApp</a>
+<a href="#inscripcion">8. Inscripción y documentación</a>
+<a href="#checklist">9. Checklist para practicar</a>
+<a href="#quiz">10. Quiz</a>
+</nav>
+<button class="menu-btn" id="menuBtn" aria-label="Abrir índice">☰ Secciones</button>
+
+<main>
+<section id="teclab">
+<h2>1. Qué es Teclab</h2>
+<p class="lead">Un instituto técnico superior 100% online que forma técnicos en 2 años, con carreras cocreadas junto a empresas líderes. Es parte de Social Learning, una edtech con presencia en Argentina, México y Chile.</p>
+<div class="grid">
+<div class="tile"><b>Propósito</b><small>Cambiar la vida de miles de personas en Latinoamérica, mejorando su experiencia como estudiantes y su empleabilidad.</small></div>
+<div class="tile"><b>Misión</b><small>Formar técnicos y profesionales con un modelo 100% online de calidad, acreditado y cocreado con empresas líderes.</small></div>
+<div class="tile"><b>Requisito de ingreso</b><small>Secundario completo. Es el único requisito.</small></div>
+<div class="tile"><b>Comunidad</b><small>Más de 8.000 egresados, según el material comercial.</small></div>
+</div>
+<h3>Los 10 diferenciales que tenés que saber de memoria</h3>
+<div class="grid">
+<div class="tile"><b>100% online</b><small>Contenido, clases y evaluaciones online. Sirve para quien trabaja, tiene familia o vive lejos.</small></div>
+<div class="tile"><b>Carreras de 2 años</b><small>Formación corta y de alto impacto, con título de Técnico Superior.</small></div>
+<div class="tile"><b>Certificado intermedio</b><small>Al terminar el 1.er año ya acredita lo que aprendió y puede salir a trabajar.</small></div>
+<div class="tile"><b>Título oficial</b><small>Avalado por la Secretaría de Educación de la Nación, con validez nacional.</small></div>
+<div class="tile"><b>Clases en vivo y grabadas</b><small>Portal 24 h, 2 clases en vivo por semana que quedan grabadas, y exámenes online en el día y horario que elija.</small></div>
+<div class="tile"><b>Prácticas profesionalizantes</b><small>Experiencia real vinculada a la carrera antes de recibirse.</small></div>
+<div class="tile"><b>Cocreación</b><small>Google, AWS Academy, Microsoft, HubSpot, Zendesk y Avenga.</small></div>
+<div class="tile"><b>PEL</b><small>Programa de Entrenamiento Laboral certificado por Adecco: CV, entrevistas y habilidades blandas.</small></div>
+<div class="tile"><b>Cursos bonificados</b><small>Excel, Power BI, Canva, finanzas personales, IA y otros, sin costo extra.</small></div>
+<div class="tile"><b>Acompañamiento y continuidad</b><small>Coach y tutores toda la carrera. Puede seguir una licenciatura en la Universidad Siglo 21 por articulación (todas las carreras menos Seguros).</small></div>
+</div>
+</section>
+
+<section id="dashboard">
+<h2>2. Cómo usar el dashboard para vender</h2>
+<p class="lead">No hace falta saberlo todo: estas son las secciones que vas a abrir en cada etapa.</p>
+<div class="tablewrap"><table>
+<tr><th>Momento</th><th>Sección del dashboard</th><th>Para qué</th></tr>
+<tr><td>Antes de contactar</td><td>Vista 360° de carreras · Guías prácticas</td><td>Repasar la ficha, el perfil del estudiante y la salida laboral de la carrera que consultó.</td></tr>
+<tr><td>Llamada</td><td>Speech por tipo de lead</td><td>Guion de 8 pasos para lead nuevo, remarketing u old.</td></tr>
+<tr><td>Chat</td><td>Fragmentos WhatsApp</td><td>Mensajes listos por momento: inicio, diagnóstico, rebate, cierre y seguimiento.</td></tr>
+<tr><td>Argumentar</td><td>Propuesta de Valor · Ganchos · Empresas de cocreación · Comparador</td><td>Diferenciales con guion, programas que suman valor y cómo orientar entre carreras parecidas.</td></tr>
+<tr><td>Objeción</td><td>Manual de objeciones · Bench</td><td>Respuesta sugerida, diferencial a usar y comparación con la competencia.</td></tr>
+<tr><td>Valores</td><td>Cotizador · Medios de pago · Convenios</td><td>Cotizar con los montos vigentes del Portal Administrativo y ver los beneficios que apliquen.</td></tr>
+<tr><td>Cierre</td><td>Requisitos y documentación · Amigo Referido · Talento Tech · RSP 2027</td><td>Lo que necesita para inscribirse y los beneficios especiales que tenga.</td></tr>
+<tr><td>Después</td><td>Onboarding · Calendario · Segmentación Fin de Gestión</td><td>Qué pasa al inscribirse, fechas de inicio y qué motivo cargar al cerrar el contacto.</td></tr>
+<tr><td>Práctica</td><td>AdmiLingo · Checlab</td><td>Juego para entrenar y asistente para encontrar textos rápido.</td></tr>
+</table></div>
+<div class="tip"><b>Regla de oro del panel:</b> validá las condiciones vigentes antes de comprometer montos, porcentajes o beneficios con el postulante. Las promos y la financiación cambian: siempre se chequean en el Portal y el Cotizador del día.</div>
+</section>
+
+<section id="carreras">
+<h2>3. Perfil de cliente por carrera</h2>
+<p class="lead">Son 27 tecnicaturas superiores, todas de 2 años y 100% online. Buscá una y fijate a quién se la vendés.</p>
+<div class="controls">
+<input id="q" type="search" placeholder="Buscar carrera, interés o salida laboral…">
+<button class="chip on" data-f="all">Todas</button>
+<button class="chip" data-f="Tecnología">Tecnología</button>
+<button class="chip" data-f="Negocio y Gestión">Negocio y Gestión</button>
+<button class="chip" data-f="Gestión del talento">Gestión del talento</button>
+<button class="chip" data-f="nueva">Nuevas 2027</button>
+</div>
+<p id="count" class="lead"></p>
+<div class="cards" id="cards"></div>
+</section>
+
+<section id="proceso">
+<h2>4. Proceso de venta paso a paso</h2>
+<ol class="steps">
+<li><b>Primer contacto.</b> Saludá con tu nombre, Teclab y la carrera que consultó. Adaptá la apertura al tipo de lead: nuevo, remarketing u old.</li>
+<li><b>Indagación.</b> Escuchá sin interrumpir y encontrá la motivación real: la vas a usar en la propuesta.
+<div class="q">«¿Por qué elegiste [carrera]? Contame.»</div>
+<div class="q">«¿Ya trabajás en el área o querés ingresar?»</div>
+<div class="q">«¿Tenés experiencia previa en el rubro?»</div>
+<div class="q">«¿Buscás cambiar de área, crecer en tu trabajo actual o empezar un proyecto nuevo?»</div>
+<div class="q">«¿Ya tenés el secundario completo?»</div></li>
+<li><b>Presentación (asocio).</b> Conectá los diferenciales con lo que te contó: título oficial, certificado intermedio, 100% online, prácticas, acompañamiento y cursos bonificados.</li>
+<li><b>Cierres parciales.</b> Confirmá durante toda la conversación para detectar objeciones antes del final.
+<div class="q">«¿Hasta acá vamos bien?»</div><div class="q">«Es una gran propuesta y se alinea con tu objetivo, ¿verdad?»</div></li>
+<li><b>Manejo de objeciones.</b> Validar, rebatir y volver al cierre (ver sección 5).</li>
+<li><b>Sondeo del medio de pago.</b> Antes de hablar de valores, preguntá con qué pagaría:
+<div class="q">«¿Contás con tarjeta de crédito? ¿De qué banco?»</div>
+Después presentás la opción vigente que mejor le sirva, con las promos y la financiación que figuren ese día en el Portal y el Cotizador.</li>
+<li><b>Cierre y preinscripción.</b> Tomás los datos del legajo, hacés la preinscripción del 1.er cuatrimestre y le mandás el link de pago.</li>
+<li><b>Seguimiento.</b> Si aranceló: bienvenida (le llega el mail automático). Si pidió tiempo: agendá día y hora precisos. Si tiene una objeción: rebatila y volvé al cierre. Al terminar, cargá el motivo de fin de gestión correcto.</li>
+</ol>
+<div class="tip"><b>Principios:</b> empatía, personalización, escucha activa y volver siempre al cierre.</div>
+</section>
+
+<section id="objeciones">
+<h2>5. Objeciones y cómo responderlas</h2>
+<p class="lead">Regla de oro: <b>1. Validar → 2. Rebatir → 3. Volver al cierre.</b></p>
+<div id="objs"></div>
+<h3>Remarketing: por qué no avanzó</h3>
+<div class="tablewrap"><table>
+<tr><th>Motivo</th><th>Respuesta</th></tr>
+<tr><td>Económico</td><td>«Justo te llamaba porque tenemos un beneficio para vos: te habíamos notado interesado y preparamos algo especial.» (Chequeá en el Portal cuál está vigente.)</td></tr>
+<tr><td>Sin tiempo</td><td>«Para eso está Teclab: 100% online, clases grabadas, sin horario fijo.»</td></tr>
+<tr><td>Eligió otra institución</td><td>«¿Puedo contarte en qué nos diferenciamos?»</td></tr>
+<tr><td>Dudas de la carrera</td><td>«Contame qué te quedó sin resolver y lo vemos juntos.»</td></tr>
+</table></div>
+</section>
+
+<section id="llamada">
+<h2>6. Guion de llamada</h2>
+<p class="lead">Speech de 8 pasos. Elegí el tipo de lead para cambiar el saludo. Reemplazá [Carrera] por la que consultó.</p>
+<div class="controls">
+<button class="chip on" data-lead="NEW">Lead nuevo</button>
+<button class="chip" data-lead="RMKT">Remarketing</button>
+<button class="chip" data-lead="OLD">Old lead</button>
+</div>
+<div class="script" id="saludo"></div>
+<div class="script" data-copy><span class="lbl">2. Indagación</span>«¿Por qué elegiste [Carrera]? Contame.»
+- ¿Ya trabajás en el área o querés ingresar?
+- ¿Tenés experiencia previa en el rubro?
+(Escuchá sin interrumpir. Identificá la motivación real: la vas a usar en la propuesta.)</div>
+<div class="script" data-copy><span class="lbl">3. Asocio: beneficios y diferenciales</span>«¡Perfecto! Te voy a comentar la propuesta que tenemos para vos:
+✅ Título oficial avalado por la Secretaría de Educación de la Nación.
+✅ Certificado intermedio al primer año: ya podés ir entrando al mercado laboral con respaldo oficial.
+✅ 100% online: 2 clases en vivo por semana y, si no podés asistir, quedan grabadas. Nos adaptamos a tu realidad.
+✅ Prácticas profesionales en empresas reales.
+✅ Acompañamiento completo: coach, tutor y docentes activos en la industria.
+✅ Cursos 100% bonificados para vos: Excel, Power BI, Canva y más.
+✅ Oficinas propias en Argentina, México y Chile.»</div>
+<div class="script" data-copy><span class="lbl">4. Cierres parciales</span>«¿Hasta acá vamos bien?»
+«Es una gran propuesta y se alinea con tu objetivo, ¿verdad?»</div>
+<div class="script" data-copy><span class="lbl">5. Sondeo del medio de pago</span>«¿Contás con tarjeta de crédito? ¿De qué banco?»
+«Tenemos beneficios con tarjetas de crédito; con eso te cuento la opción que mejor te sirve.»
+(Con el medio de pago confirmado, presentá la promo y la financiación vigentes del Portal o el Cotizador: cuota, qué incluye y el beneficio que aplique.)</div>
+<div class="script" data-copy><span class="lbl">6. Datos de preinscripción</span>«Bien, te cuento cómo avanzamos. Hacemos la preinscripción del primer cuatrimestre, validamos tus datos y te enviamos el link de pago para confirmar. Después te llega el mail de confirmación.»
+«Decime, tu mail es ___, ¿verdad? Perfecto. ¿Y tu fecha de nacimiento?»</div>
+<div class="script" data-copy><span class="lbl">7. Pago</span>Enviás el link de pago una vez confirmados los datos.</div>
+<div class="script" data-copy><span class="lbl">8. Cierre</span>• Aranceló: «¡Bienvenido/a a Teclab!» Le llega automáticamente el mail de bienvenida.
+• Pidió tiempo: «Mañana a las 10 te llamo y definimos, ¿dale?» (día y hora precisos).
+• Tiene una objeción: rebatir y volver al cierre.</div>
+</section>
+
+<section id="whatsapp">
+<h2>7. Guion de WhatsApp</h2>
+<p class="lead">Textos basados en los fragmentos oficiales. Completá lo que está entre llaves antes de enviar.</p>
+<h3>Primer mensaje</h3>
+<div class="script" data-copy><span class="lbl">Lead con datos (saludo + indagación)</span>¡Hola, {nombre}! 👋🏻 ¿Cómo estás? Soy {asesor}, tu asesor de Teclab.
+Vi que consultaste por {carrera}, ¡excelente elección! Tiene una gran salida laboral 😉
+Contame, ¿qué te motiva a estudiar esta carrera? Así puedo asesorarte mejor.</div>
+<div class="script" data-copy><span class="lbl">Lead sin datos (pedido de mail y localidad)</span>¡Hola! ¿Cómo estás? Te escribe {asesor}, tu asesor de Admisión de Teclab. 🤓
+¡Genial que quieras estudiar con nosotros! Para asesorarte mejor, ¿me pasás tu mail y tu localidad? Así te cuento todo sobre la carrera que te interesa.
+Nuestro único requisito es que tengas el secundario completo.</div>
+<h3>Desarrollo</h3>
+<div class="script" data-copy><span class="lbl">Diagnóstico</span>Para orientarte mejor: ¿querés estudiar para cambiar de trabajo, crecer en tu puesto actual o empezar desde cero en esta área?</div>
+<div class="script" data-copy><span class="lbl">Diferenciales</span>Te cuento rápido sobre tu carrera y sobre Teclab:
+✅ Dura 2 años y es 100% online
+✅ Título oficial acreditado por la Secretaría de Educación de la Nación
+✅ Creada junto a grandes líderes del rubro
+✅ Certificado intermedio al completar el 1.er año
+Si después querés seguir, podés continuar una licenciatura en la Siglo 21, porque tenemos un convenio.
+¿Estoy siendo claro hasta acá, {nombre}? Si tenés alguna duda, preguntame sin problema. 😊</div>
+<div class="script" data-copy><span class="lbl">Modalidad</span>Vas a estudiar 100% virtual 💻
+✅ Portal de estudiantes 24 h con todo lo necesario para estudiar
+✅ 2 clases en vivo por semana, ¡y quedan grabadas!
+✅ Exámenes online: te inscribís vos en el día y horario que quieras
+El único requisito es tener una compu con cámara para rendir. Está buenísimo, ¿no?</div>
+<div class="script" data-copy><span class="lbl">Acompañamiento</span>¡Excelente pregunta! 😎 En Teclab tenés acompañamiento todo el tiempo. Durante la cursada, los tutores te ayudan con las dudas académicas y te guían en los contenidos. Y los coaches te acompañan desde el inicio para que te adaptes a la plataforma y a la modalidad online. 💻
+Siempre vas a tener con quién hablar si necesitás apoyo.</div>
+<div class="script" data-copy><span class="lbl">Sondeo de pago</span>Para contarte la mejor opción vigente: ¿qué tarjeta usás habitualmente? Así te digo qué beneficios podés aprovechar. 😄</div>
+<div class="script" data-copy><span class="lbl">Precierre</span>¡Excelente! Te cuento cómo seguimos:
+1️⃣ Hacemos la preinscripción del primer cuatrimestre para validar tus datos.
+2️⃣ Te envío un link de pago para confirmar la solicitud.
+3️⃣ Una vez confirmado, te llega un mail de bienvenida con toda la info. 🙌
+Para avanzar, ¿me confirmás tu mail? 📧</div>
+<h3>Seguimiento</h3>
+<div class="script" data-copy><span class="lbl">Pidió pensarlo: agendar</span>Dale, lo revisás tranquilo. Para no dejarlo abierto, agendemos un horario concreto y retomamos con las dudas que te queden. ¿Te contacto hoy a las {hora} o mañana a las {hora2}?</div>
+<div class="script" data-copy><span class="lbl">2 horas sin respuesta</span>{nombre} 😊 Te escribo para saber si pudiste ver la info de la carrera que te mandé más temprano. Si querés, te ayudo a confirmar tu lugar hoy mismo 🙌 Si quedó alguna duda, estoy a disposición. ¿O preferís que te llame?</div>
+<div class="script" data-copy><span class="lbl">Al día siguiente</span>Hola {nombre} 😊 ¿Cómo estás? Estoy disponible para seguir con tu inscripción 🎓 ¿Avanzamos hoy o quedó alguna duda para resolver? Avisame si querés que te llame o si seguimos por acá.</div>
+<div class="script" data-copy><span class="lbl">Recontacto con prácticas</span>Hola 👋, ¡espero que estés muy bien! Te escribía porque no quería que se te pase la fecha de inscripción para {carrera}. Más allá de la teoría, lo que realmente marca la diferencia en esta formación son las Prácticas Profesionalizantes que incluye. 📊💼 ¿Revisamos si todavía llegamos a reservar tu lugar?</div>
+</section>
+
+<section id="inscripcion">
+<h2>8. Inscripción y documentación</h2>
+<h3>Datos para el alta del legajo</h3>
+<div class="grid">
+<div class="tile">✅ Nombre y apellido completos</div><div class="tile">✅ DNI</div><div class="tile">✅ Fecha de nacimiento</div><div class="tile">✅ Correo electrónico</div>
+<div class="tile">✅ Domicilio y código postal</div><div class="tile">✅ Estado civil</div><div class="tile">✅ Localidad de nacimiento</div><div class="tile">✅ Colegio de egreso del secundario</div>
+</div>
+<h3>Pago desde el Portal del alumno</h3>
+<ol class="steps">
+<li><b>Entrar al Portal del alumno</b> (portalalumno.teclab.edu.ar) con su DNI sin puntos como usuario y generar su contraseña.</li>
+<li><b>Pagos › Pagos en línea:</b> elegir los conceptos que indique el circuito vigente (matrícula y aranceles del cuatrimestre).</li>
+<li><b>Medio de pago:</b> tarjeta de crédito o débito, Mercado Pago, otras plataformas de cuotas, efectivo (Pago Fácil o Rapipago) o financiación Teclab, según lo vigente. Si corresponde, cargar el cupón promocional del día.</li>
+<li><b>Facturación y confirmación:</b> completar los datos y recibir por mail el comprobante y la bienvenida.</li>
+</ol>
+<div class="note">El pago en efectivo no se acredita al instante: avisale al lead y hacé seguimiento.</div>
+<h3>Documentación obligatoria</h3>
+<div class="tablewrap"><table>
+<tr><th>Documento</th><th>Cómo tiene que venir</th></tr>
+<tr><td>DNI</td><td>Foto o escaneo de ambos lados, legible, vigente y sin reflejos (JPG, PNG o PDF).</td></tr>
+<tr><td>Título o analítico del secundario</td><td>Legible, en PDF o escaneo.</td></tr>
+<tr><td>Estudios secundarios en el exterior</td><td>Residencia otorgada por la Dirección Nacional de Migraciones y convalidación del Ministerio de Educación (DVNTyE). Sin convalidación está incompleta, aunque tenga apostilla o legalizaciones.</td></tr>
+</table></div>
+<h3>Beneficios especiales para tener en cuenta</h3>
+<div class="grid">
+<div class="tile"><b>Amigo Referido</b><small>Hay beneficio para quien refiere y para quien es referido. Solo aplica si el alumno tiene TOKEN, es decir, si entró por el formulario oficial.</small></div>
+<div class="tile"><b>Talento Tech / Codo a Codo</b><small>Reconocimiento del 1.er año en Programación y Data Science con certificaciones de 2024 en adelante. Se valida ya inscripto, ante Secretaría Académica.</small></div>
+<div class="tile"><b>RSP y Exámenes Libres 2027</b><small>Con 2 años o más de experiencia en el área se pueden reconocer 4 materias más la Práctica Profesional (piloto en 7 carreras). Nunca prometas un reconocimiento automático.</small></div>
+<div class="tile"><b>Convenios</b><small>Empleados de entidades con convenio y sus familiares directos pueden tener un beneficio. Chequealo en Convenios.</small></div>
+</div>
+<h3>Después de inscribirse</h3>
+<p>Le llega un mail con los accesos y un test de habilidades. Después agenda un Zoom de bienvenida con un coach, que le explica el portal. Antes del inicio tiene Autoliderazgo (Materia 0), cursos de habilidades y, en Programación, Data Science y Redes, cursos de nivelación.</p>
+</section>
+
+<section id="checklist">
+<h2>9. Checklist para practicar</h2>
+<p class="lead">Tildá lo que vayas completando. Se guarda en este navegador.</p>
+<div class="progress"><span id="bar"></span></div>
+<ul class="check" id="check"></ul>
+</section>
+
+<section id="quiz" class="quiz">
+<h2>10. Quiz de autoevaluación</h2>
+<p class="lead">Elegí una opción en cada pregunta. <span class="score" id="score"></span></p>
+<div id="quizBox"></div>
+<button class="chip" id="reset">Reiniciar quiz</button>
+</section>
+</main>
+</div>
+<footer>Material interno de capacitación comercial Teclab. No compartir fuera del equipo. Basado en el Dashboard Comercial (actualización 02-11-2026): validá siempre las condiciones vigentes.</footer>
+
+<script>
+const CARRERAS = [{"n": "Programación", "area": "Tecnología", "nueva": false, "emp": "Avenga", "cert": "Auxiliar en Programación", "para": "Quien quiere trabajar en desarrollo de software, páginas web, apps o automatización de procesos.", "perfil": ["Se interesan por la tecnología, las aplicaciones y el desarrollo de software.", "Disfrutan resolver problemas y crear soluciones.", "Tienen pensamiento lógico, curiosidad y capacidad de aprendizaje.", "Buscan ingresar al sector tecnológico desde una formación práctica."], "salida": ["Empresas de desarrollo de software", "Agencias y consultoras tecnológicas", "Startups y empresas de productos digitales", "Áreas de sistemas, programación y desarrollo"], "art": "Lic. en Informática o Ingeniería en Software", "alerta": ""}, {"n": "Data Science", "area": "Tecnología", "nueva": false, "emp": "AWS Academy", "cert": "Data Analyst Assistant", "para": "Perfiles analíticos; personas interesadas en datos, reportes, inteligencia de negocio, IA y toma de decisiones.", "perfil": ["Se interesan por la tecnología, los datos y la inteligencia artificial.", "Disfrutan analizar información y resolver problemas.", "Tienen un perfil lógico, curioso y orientado al detalle.", "Quieren aprender Python, bases de datos y Machine Learning."], "salida": ["Empresas de tecnología y desarrollo de software", "Bancos, finanzas, seguros y servicios profesionales", "E-commerce, marketing y plataformas digitales", "Consultoras y áreas de Business Intelligence"], "art": "Lic. en Ciencias de Datos o Ing. En Innovación y Desarrollo", "alerta": ""}, {"n": "Quality Assurance", "area": "Tecnología", "nueva": false, "emp": "Microsoft", "cert": "Asistente de Pruebas de Calidad (Quality Assurance Tester Assistant)", "para": "Perfiles detallistas; personas que buscan entrar al mundo IT desde testing, calidad de software y automatización.", "perfil": ["Se interesan por la tecnología, el software y la mejora de productos digitales.", "Son detallistas, analíticas, organizadas y disfrutan detectar problemas.", "Tienen curiosidad por entender cómo funcionan las aplicaciones y los sistemas.", "Buscan ingresar al sector tecnológico sin limitarse únicamente a programar."], "salida": ["Empresas de tecnología y desarrollo de software", "Áreas de QA, testing y control de calidad de productos digitales", "Empresas en procesos de transformación digital", "Consultoras de tecnología, auditoría y aseguramiento de calidad"], "art": "", "alerta": ""}, {"n": "Cloud Administration", "area": "Tecnología", "nueva": false, "emp": "AWS Academy", "cert": "Asistente en Administración de Servicios en la Nube", "para": "Quien quiere trabajar con plataformas cloud, infraestructura digital y entornos tecnológicos modernos.", "perfil": ["Se interesan por la tecnología, las redes y la infraestructura.", "Quieren aprender cómo funcionan y se administran los servicios en la nube.", "Disfrutan resolver problemas técnicos.", "Son analíticas, organizadas y detallistas."], "salida": ["Empresas que utilizan servicios en la nube", "PyMEs, startups y multinacionales en procesos de migración cloud", "Áreas de infraestructura, redes, soporte y operaciones IT", "Empresas tecnológicas y consultoras"], "art": "Ing. en Software o Lic. en Informática", "alerta": ""}, {"n": "Seguridad Informática", "area": "Tecnología", "nueva": false, "emp": "", "cert": "Auxiliar en Administración de Seguridad Informática", "para": "Quien busca especializarse en ciberseguridad, un área con alta demanda de perfiles.", "perfil": ["Se interesan por la tecnología, las redes y la ciberseguridad.", "Disfrutan analizar problemas, investigar causas y buscar soluciones.", "Tienen un perfil lógico, curioso, responsable y detallista.", "Quieren aprender sobre servidores, programación y seguridad Cloud."], "salida": ["Áreas de IT, redes y ciberseguridad de empresas", "Organizaciones que gestionan información y datos sensibles", "Consultoras especializadas en seguridad informática", "Equipos internos de monitoreo y respuesta ante incidentes"], "art": "", "alerta": ""}, {"n": "Redes Informáticas", "area": "Tecnología", "nueva": false, "emp": "", "cert": "Asistente en Redes Informáticas", "para": "Quien quiere trabajar en soporte IT, infraestructura tecnológica y telecomunicaciones.", "perfil": ["Se interesan por la tecnología, internet y la conectividad.", "Disfrutan resolver problemas técnicos.", "Son analíticas, ordenadas y detallistas.", "Quieren aprender a configurar redes y servidores."], "salida": ["Empresas públicas y privadas", "Áreas de infraestructura, redes y soporte IT", "Proyectos de conectividad y telecomunicaciones", "Consultoras tecnológicas y de ciberseguridad"], "art": "Ingeniería en Software o Lic. en Informática", "alerta": ""}, {"n": "Customer Experience", "area": "Negocio y Gestión", "nueva": false, "emp": "Zendesk", "cert": "Asistente en Customer Experience", "para": "Quien quiere trabajar en fidelización de clientes, mejora de procesos y satisfacción del usuario.", "perfil": ["Se interesan por la atención, el servicio y la experiencia del cliente.", "Son empáticas, observadoras y cuentan con buenas habilidades de comunicación.", "Disfrutan analizar necesidades y encontrar oportunidades de mejora.", "Quieren trabajar en áreas de marketing, atención, fidelización o experiencia."], "salida": ["Empresas de productos y servicios", "Áreas de experiencia del cliente, atención y fidelización", "Agencias de publicidad y marketing", "Consultoras especializadas en Customer Experience"], "art": "", "alerta": ""}, {"n": "Seguros", "area": "Negocio y Gestión", "nueva": false, "emp": "", "cert": "Auxiliar de Análisis de Contrato de Seguros", "para": "Quien busca salida laboral en compañías aseguradoras, brokers, productores y áreas comerciales.", "perfil": ["Se interesan por el mundo de los seguros, los riesgos y las finanzas.", "Quieren asesorar y acompañar a personas en decisiones importantes.", "Tienen capacidad de escucha, comunicación y orientación comercial.", "Son organizadas y cuidadosas con la documentación y los procesos."], "salida": ["Compañías de seguros", "Brokers y organizaciones aseguradoras", "Oficinas de productores y asesores de seguros", "Áreas comerciales y de atención al asegurado"], "art": "", "alerta": ""}, {"n": "Inbound Marketing", "area": "Negocio y Gestión", "nueva": false, "emp": "HubSpot", "cert": "Asistente en Inbound Marketing", "para": "Quien busca especializarse en captación de leads, embudos de venta y marketing estratégico.", "perfil": ["Se interesan por el marketing, las ventas y la creación de contenidos.", "Quieren trabajar en áreas de marketing, ventas o comunicación.", "Buscan aprender a atraer, convertir y fidelizar clientes.", "Tienen un emprendimiento y necesitan generar oportunidades comerciales."], "salida": ["Empresas públicas o privadas de cualquier sector", "Agencias de marketing y comunicación", "Startups, PyMEs y ONGs", "Compañías tecnológicas"], "art": "Lic. en Comercialización o Lic. en Publicidad", "alerta": ""}, {"n": "Gestión Contable", "area": "Negocio y Gestión", "nueva": false, "emp": "", "cert": "Auxiliar Contable", "para": "Quien quiere trabajar en estudios contables, empresas, áreas administrativas o emprendimientos propios.", "perfil": ["Se interesan por la contabilidad, la administración y las finanzas.", "Son organizadas, responsables y atentas a los detalles.", "Disfrutan trabajar con números, documentos y datos.", "Quieren trabajar en estudios contables o áreas administrativas."], "salida": ["PyMEs y grandes empresas de cualquier sector", "Estudios contables y áreas administrativas", "Áreas contables, impositivas, laborales y de tesorería", "Organismos e instituciones públicas y privadas"], "art": "", "alerta": ""}, {"n": "Periodismo y Nuevas Tecnologías", "area": "Negocio y Gestión", "nueva": false, "emp": "", "cert": "Asistente Junior en Periodismo", "para": "Quien quiere dedicarse a la comunicación y a las nuevas formas de producir contenido.", "perfil": ["Se interesan por la actualidad, la comunicación y las noticias.", "Disfrutan investigar, escribir y contar historias.", "Tienen curiosidad y una mirada crítica.", "Quieren crear contenidos para medios y redes sociales."], "salida": ["Medios digitales y tradicionales", "Productoras de contenidos y multimedios", "Agencias de prensa, comunicación y marketing", "Organismos públicos y áreas de comunicación institucional"], "art": "", "alerta": ""}, {"n": "Gestión Hotelera", "area": "Negocio y Gestión", "nueva": false, "emp": "", "cert": "Asistente en Operación de Hoteles", "para": "Quien quiere trabajar en hoteles, alojamientos, atención al cliente, reservas y gestión de servicios.", "perfil": ["Se interesan por la hotelería, el turismo y la atención al cliente.", "Disfrutan organizar servicios y resolver situaciones.", "Quieren trabajar en hoteles, agencias, cruceros o gastronomía.", "Buscan desarrollarse en reservas, recepción, eventos o housekeeping."], "salida": ["Cadenas hoteleras nacionales y extranjeras", "Agencias de viajes", "Aeropuertos y cruceros", "Bares, restaurantes, salones y centros de convenciones"], "art": "", "alerta": ""}, {"n": "Marketing Digital", "area": "Negocio y Gestión", "nueva": false, "emp": "Google", "cert": "Asistente en Marketing Digital", "para": "Quien quiere trabajar en comunicación, ventas y posicionamiento de marcas en internet.", "perfil": ["Se interesan por las redes, la publicidad y la comunicación.", "Quieren trabajar en empresas, agencias o e-commerce.", "Tienen un emprendimiento y buscan aumentar sus ventas.", "Desean trabajar como freelance."], "salida": ["Empresas y agencias de publicidad", "Áreas de marketing y comunicación", "Startups y plataformas digitales", "E-commerce"], "art": "Lic. en Publicidad o Lic. en Comercialización", "alerta": ""}, {"n": "Gestión de la Empresa Agraria", "area": "Negocio y Gestión", "nueva": false, "emp": "", "cert": "Auxiliar en Gestión de la Empresa Agraria", "para": "Quien busca combinar gestión, negocios y sector agro.", "perfil": ["Se interesan por el campo, la producción y los agronegocios.", "Trabajan en empresas agropecuarias y quieren profesionalizarse.", "Tienen un emprendimiento familiar o proyecto vinculado al agro.", "Buscan combinar conocimientos productivos con administración."], "salida": ["Empresas de producción agrícola y ganadera", "Cooperativas y organismos vinculados al sector", "Cadenas agroalimentarias", "Áreas administrativas, productivas y comerciales del agro"], "art": "", "alerta": ""}, {"n": "Planificación y Organización de Eventos", "area": "Negocio y Gestión", "nueva": false, "emp": "", "cert": "Asistente de Organización de Eventos", "para": "Quien disfruta de la organización, la creatividad y el contacto con personas.", "perfil": ["Se interesan por la organización, la comunicación y la creatividad.", "Disfrutan coordinar personas, tareas y proveedores.", "Son organizadas, resolutivas y detallistas.", "Quieren trabajar en eventos sociales, corporativos o culturales."], "salida": ["Productoras y agencias de eventos", "Hoteles, centros culturales y espacios de convenciones", "Empresas que realizan congresos, conferencias y encuentros corporativos", "Organizaciones gubernamentales y ONG"], "art": "", "alerta": ""}, {"n": "Relaciones Laborales", "area": "Gestión del talento", "nueva": false, "emp": "", "cert": "Auxiliar de Relaciones Laborales", "para": "Quien quiere trabajar en selección, clima laboral, administración de personal y relaciones internas.", "perfil": ["Se interesan por la gestión de personas, el mundo del trabajo y los Recursos Humanos.", "Son organizadas, empáticas, responsables y cuentan con buenas habilidades de comunicación.", "Quieren acompañar equipos, prevenir conflictos y mejorar los vínculos laborales.", "Buscan aprender sobre normativa, remuneraciones, selección y beneficios."], "salida": ["Áreas de Recursos Humanos y Relaciones Laborales de empresas públicas y privadas", "Consultoras de selección, capacitación y gestión de personas", "Organismos vinculados al empleo, la seguridad social y la regulación laboral", "Áreas de administración de personal, compensaciones y beneficios"], "art": "", "alerta": ""}, {"n": "Gestión de Proyectos Mineros", "area": "Negocio y Gestión", "nueva": true, "emp": "", "cert": "Asistente en Gestión de Proyectos Mineros", "para": "Participar en la planificación, el seguimiento y el control de proyectos, operaciones y servicios de la actividad minera.", "perfil": [], "salida": ["Asistente en gestión de proyectos mineros", "Asistente de planificación, cronogramas y presupuestos", "Analista operativo o de control de gestión junior", "Asistente de compras, abastecimiento y logística minera"], "art": "", "alerta": "Carrera nueva 2027: validá novedades y el link oficial antes de comunicarla."}, {"n": "Comercio Electrónico (e-commerce)", "area": "Negocio y Gestión", "nueva": true, "emp": "", "cert": "Asistente en Comercio Electrónico (e-commerce)", "para": "Planificar, implementar y gestionar canales de venta digitales, tiendas online y marketplaces.", "perfil": [], "salida": ["Asistente o ejecutivo de e-commerce", "Operador de tienda online o marketplace", "Especialista o analista junior de marketplaces", "Analista junior de performance, conversión o inteligencia comercial"], "art": "", "alerta": "Carrera nueva 2027: validá novedades y el link oficial antes de comunicarla."}, {"n": "Desarrollo de Videojuegos", "area": "Tecnología", "nueva": true, "emp": "", "cert": "Asistente en Desarrollo de Videojuegos", "para": "Programar mecánicas y sistemas de interacción y participar en distintas etapas de producción de videojuegos.", "perfil": [], "salida": ["Desarrollador o asistente de desarrollo de videojuegos junior", "Técnico junior en motores de videojuegos", "Tester o analista QA de productos interactivos", "Desarrollador de experiencias de gamificación, simulación o advergames"], "art": "", "alerta": "Carrera nueva 2027: validá novedades y el link oficial antes de comunicarla."}, {"n": "Gestión Ambiental", "area": "Negocio y Gestión", "nueva": true, "emp": "", "cert": "Asistente en Gestión Ambiental", "para": "Operar sistemas de gestión ambiental e interpretar la normativa aplicable.", "perfil": [], "salida": ["Asistente técnico en gestión ambiental, EHS o sostenibilidad", "Analista junior de cumplimiento, monitoreo o reporting ambiental", "Asistente de auditorías, certificaciones y evaluaciones de impacto", "Soporte de proyectos de residuos, economía circular y cambio climático"], "art": "", "alerta": "Carrera nueva 2027: validá novedades y el link oficial antes de comunicarla."}, {"n": "Diseño de Producto Digital", "area": "Tecnología", "nueva": true, "emp": "", "cert": "Asistente en Diseño de Producto Digital", "para": "Gestionar y coordinar el ciclo de vida de productos digitales, conectando necesidades del negocio, de los usuarios y de la tecnología.", "perfil": [], "salida": ["Asistente o analista de producto digital", "Analista funcional junior", "Product Operations o coordinador ágil junior", "Asistente de discovery, research o validación"], "art": "", "alerta": "Carrera nueva 2027: validá novedades y el link oficial antes de comunicarla."}, {"n": "Logística", "area": "Negocio y Gestión", "nueva": true, "emp": "", "cert": "Asistente en Logística", "para": "Diseñar, gestionar y optimizar operaciones de la cadena de suministro.", "perfil": [], "salida": ["Asistente o analista junior de logística y cadena de suministro", "Asistente de inventarios, depósito, despacho o distribución", "Coordinador junior de transporte, ruteo, flota o última milla", "Asistente de proveedores, compras u operaciones de e-commerce"], "art": "", "alerta": "Carrera nueva 2027: validá novedades y el link oficial antes de comunicarla."}, {"n": "Higiene y Seguridad en el Trabajo", "area": "Negocio y Gestión", "nueva": true, "emp": "", "cert": "Asistente en Higiene y Seguridad en el Trabajo", "para": "Identificar, evaluar y controlar riesgos laborales para promover condiciones de trabajo seguras y saludables.", "perfil": [], "salida": ["Técnico en prevención de riesgos laborales", "Analista de Seguridad e Higiene", "Asistente o especialista junior en ergonomía y salud ocupacional", "Coordinador preventivo o de programas de seguridad"], "art": "", "alerta": "Carrera nueva 2027: validá novedades y el link oficial antes de comunicarla."}, {"n": "Administración de Empresas", "area": "Negocio y Gestión", "nueva": true, "emp": "", "cert": "Asistente en Administración de Empresas", "para": "Participar en la gestión de organizaciones públicas y privadas, en entornos tradicionales, digitales o híbridos.", "perfil": [], "salida": ["Asistente o analista administrativo, contable o financiero", "Coordinador junior de operaciones, logística o procesos", "Asistente de proyectos, innovación o transformación digital", "Analista junior de planificación y gestión pública"], "art": "", "alerta": "Carrera nueva 2027: validá novedades y el link oficial antes de comunicarla."}, {"n": "Gestión de Inteligencia Artificial y Transformación Digital", "area": "Tecnología", "nueva": true, "emp": "", "cert": "Asistente en Inteligencia Artificial Estratégica", "para": "Aplicar inteligencia artificial a negocios, automatizar procesos y acompañar la transformación digital de organizaciones. No requiere conocimientos avanzados de programación.", "perfil": [], "salida": ["Asistente de producto con IA", "Analista de automatización con IA", "Implementador de IA no-code", "Analista de procesos inteligentes"], "art": "", "alerta": "Carrera nueva 2027: usá el plan de estudios y la landing oficial para comunicarla."}, {"n": "Administración de Negocios Digitales Financieros", "area": "Negocio y Gestión", "nueva": true, "emp": "", "cert": "Asistente en Administración de Negocios Digitales Financieros", "para": "Gestionar y optimizar la operación de servicios financieros digitales, transacciones, pagos y procesos Fintech.", "perfil": [], "salida": ["Fintechs, startups, billeteras virtuales y neobancos", "Procesadoras y pasarelas de pago, exchanges", "Bancos y entidades financieras: operaciones, fraude u onboarding"], "art": "", "alerta": "Carrera nueva 2027 con plan nuevo: landing y resolución ministerial pendientes. Validá la aprobación vigente antes de hablar de título oficial."}, {"n": "Diseño y Desarrollo de Inteligencia Artificial", "area": "Tecnología", "nueva": true, "emp": "", "cert": "Asistente en Inteligencia Artificial", "para": "Diseñar, desarrollar, integrar y desplegar modelos, agentes y soluciones de inteligencia artificial en entornos reales.", "perfil": [], "salida": ["Desarrollador de agentes inteligentes", "Implementador de IA aplicada e integraciones", "Especialista junior en despliegue (MLOps) y prototipado"], "art": "", "alerta": "Carrera nueva 2027 con plan nuevo: landing y resolución ministerial pendientes. Validá la aprobación vigente antes de hablar de título oficial."}];
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+
+/* Carreras */
+let filtro = 'all';
+function renderCarreras(){
+  const q = $('#q').value.trim().toLowerCase();
+  const list = CARRERAS.filter(c => (filtro==='all' || c.area===filtro || (filtro==='nueva' && c.nueva)) &&
+    (!q || JSON.stringify(c).toLowerCase().includes(q)));
+  $('#count').textContent = list.length + ' de ' + CARRERAS.length + ' carreras';
+  $('#cards').innerHTML = list.map(c => `<div class="car">
+    <h4>Técnico Superior en ${esc(c.n)}</h4>
+    <div class="tags"><span class="tag">${esc(c.area)}</span>${c.nueva?'<span class="tag new">Nueva 2027</span>':''}${c.emp?`<span class="tag co">Cocreada con ${esc(c.emp)}</span>`:''}</div>
+    <div class="k">A quién se la vendés</div><div>${esc(c.para)}</div>
+    ${c.perfil.length?`<ul>${c.perfil.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>`:''}
+    <div class="k">Salida laboral</div><ul>${c.salida.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>
+    <div class="k">Certificado intermedio (1.er año)</div><div>${esc(c.cert)}</div>
+    <div class="k">Articulación Siglo 21</div><div>${c.n==='Seguros'?'No aplica':esc(c.art||'Aplica: confirmá la licenciatura en el simulador')}</div>
+    ${c.alerta?`<div class="alert">⚠ ${esc(c.alerta)}</div>`:''}
+  </div>`).join('');
+}
+$('#q').addEventListener('input', renderCarreras);
+$$('[data-f]').forEach(b => b.addEventListener('click', () => { $$('[data-f]').forEach(x=>x.classList.remove('on')); b.classList.add('on'); filtro=b.dataset.f; renderCarreras(); }));
+renderCarreras();
+
+/* Objeciones */
+const OBJ = [
+ ['«No tengo tiempo»','Te entiendo. Por eso la modalidad de Teclab está pensada para personas que trabajan. Tenés 2 clases en vivo por semana, pero si no podés asistir quedan grabadas. La mayoría de nuestros estudiantes trabajan o estudian, y nos adaptamos a sus realidades.','Flexibilidad total y clases grabadas 24/7','Retomar el cierre.'],
+ ['«Me parece caro»','Lo entiendo. Pensalo como una inversión: en 2 años terminás la carrera y empezás a trabajar en el área. Además hay opciones de pago y financiación; contame con qué pagarías y te digo la que mejor te sirve.','Duración corta y retorno rápido de la inversión','Sondear el medio de pago, revisar la promo vigente en el Portal y retomar el cierre.'],
+ ['«Lo tengo que pensar»','Claro, es una decisión importante. ¿Cuál es la duda puntual que te quedó? A veces hay una inquietud específica que podemos resolver ahora mismo.','Acompañamiento personalizado','Resolver la duda concreta y volver al cierre.'],
+ ['«Quiero algo más corto, tipo curso»','La diferencia clave es que un curso no te da título. Con Teclab, al primer año ya tenés un certificado intermedio y al segundo, el título oficial de Técnico Superior.','Certificado intermedio al 1.er año y título oficial al 2.º','Confirmar si eso responde a su objetivo.'],
+ ['«No sé si online me sirve»','Es una duda válida. A la mayoría les termina funcionando mejor: sin transporte, sin horario fijo y con clases grabadas.','Plataforma intuitiva, soporte y tutores','Explicar acompañamiento, clases y evaluaciones; volver al cierre.'],
+ ['«Quiero empezar más adelante»','Entiendo. Pero cada mes que pasa es tiempo sin sumar experiencia ni título. En 2 años ya sos técnico.','Urgencia de inscripción','Retomar el cierre con una alternativa concreta para avanzar ahora.'],
+ ['«Tengo que hablarlo con alguien»','Por supuesto. Te propongo que, mientras lo hablás, te paso información detallada para que la puedan revisar juntos.','Material para compartir','Enviar material y agendar día y hora precisos de seguimiento.'],
+ ['«¿Es reconocido? ¿Son serios?»','Somos parte de Social Learning, una edtech con instituciones acreditadas oficialmente en Argentina, México y Chile. El título es oficial y tiene validez nacional.','Título oficial y presencia regional','Ofrecer la landing oficial de la carrera y volver al cierre.'],
+ ['«Sin experiencia no me contratan»','Por eso la carrera incluye Prácticas Profesionalizantes y el PEL, certificado por Adecco: salís con experiencia demostrable para tu CV y preparado para entrevistas.','Prácticas y PEL','Conectar con su objetivo laboral y cerrar.'],
+];
+$('#objs').innerHTML = OBJ.map(o => `<details><summary>💬 ${o[0]}</summary><div class="body">
+<div class="script" data-copy><span class="lbl">Respuesta sugerida</span>${esc(o[1])}</div>
+<p><b>Diferencial a usar:</b> ${esc(o[2])}<br><b>Después:</b> ${esc(o[3])}</p></div></details>`).join('');
+
+/* Saludo por tipo de lead */
+const SALUDO = {
+ NEW:'Hola, ¿cómo estás? ¿Todo bien?\n\nQué bueno. Te cuento: mi nombre es ___, te contacto desde Teclab porque consultaste por nuestra carrera de [Carrera]. ¡Justo te quería contar la propuesta!',
+ RMKT:'¡Hola! ¿Cómo estás?\n\nTe llamo porque habías consultado por [Carrera] y quería ver cómo estabas. ¿Qué pasó? ¿Por qué no pudiste avanzar en ese momento?\n\n(Rebatí según el motivo: económico, tiempo, otra institución o dudas. Ver sección 5.)',
+ OLD:'¡Hola! Te llamaba porque estuvimos asesorándote sobre [Carrera] y quería comentarte que estamos cerrando la inscripción para comenzar. ¿Te quedó alguna duda para avanzar?\n\n(Si trae una objeción: rebatir y retomar el cierre. Ir directo, sin rodeos.)'
+};
+function setLead(k){ $('#saludo').innerHTML = '<span class="lbl">1. Saludo</span>' + esc(SALUDO[k]); addCopy($('#saludo')); }
+$$('[data-lead]').forEach(b => b.addEventListener('click', () => { $$('[data-lead]').forEach(x=>x.classList.remove('on')); b.classList.add('on'); setLead(b.dataset.lead); }));
+
+/* Botones copiar */
+function addCopy(el){
+  if(el.querySelector('.copy')) return;
+  const btn = document.createElement('button'); btn.className='copy'; btn.textContent='Copiar';
+  btn.addEventListener('click', () => {
+    const clone = el.cloneNode(true); clone.querySelectorAll('.copy,.lbl').forEach(n=>n.remove());
+    const txt = clone.textContent.trim();
+    const done = () => { btn.textContent='¡Copiado!'; setTimeout(()=>btn.textContent='Copiar',1400); };
+    if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(txt).then(done); }
+    else { const ta=document.createElement('textarea'); ta.value=txt; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy');}catch(e){} ta.remove(); done(); }
+  });
+  el.appendChild(btn);
+}
+setLead('NEW');
+$$('[data-copy]').forEach(addCopy);
+
+/* Checklist */
+const CHECK = [
+ 'Recorrí el dashboard completo y guardé en Marcadores: Speech, Objeciones, Fragmentos WhatsApp, Medios de pago y Cotizador.',
+ 'Digo los 10 diferenciales de Teclab de memoria.',
+ 'Estudié 5 carreras: a quién se venden, salida laboral y certificado intermedio.',
+ 'Sé qué carreras son cocreadas y con qué empresa.',
+ 'Practiqué en voz alta el guion de llamada para lead nuevo, remarketing y old.',
+ 'Practiqué las objeciones con alguien que hizo de lead, volviendo siempre al cierre.',
+ 'Hice una cotización de prueba en el Cotizador con los valores vigentes del Portal.',
+ 'Escribí un primer mensaje de WhatsApp y un seguimiento a las 2 horas.',
+ 'Repasé los datos del legajo, la documentación y el pago en el Portal del alumno.',
+ 'Sé cuándo aplican Amigo Referido, Talento Tech, RSP y convenios.',
+ 'Conozco los motivos de Segmentación Fin de Gestión que elige el asesor.',
+ 'Jugué una ronda de AdmiLingo e hice el quiz de abajo.'
+];
+const KEY='teclab_cap_check';
+let st = {}; try{ st = JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){}
+function renderCheck(){
+  $('#check').innerHTML = CHECK.map((t,i)=>`<li><label><input type="checkbox" data-i="${i}" ${st[i]?'checked':''}><span>${esc(t)}</span></label></li>`).join('');
+  const n = CHECK.filter((_,i)=>st[i]).length; $('#bar').style.width = (n/CHECK.length*100)+'%';
+  $$('#check input').forEach(x=>x.addEventListener('change',()=>{ st[x.dataset.i]=x.checked; try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){} renderCheck(); }));
+}
+renderCheck();
+
+/* Quiz */
+const QUIZ = [
+ ['¿Cuánto duran las carreras de Teclab?',['1 año','2 años','4 años'],1,'Todas duran 2 años y son 100% online.'],
+ ['¿Qué obtiene el alumno al terminar el primer año?',['Nada hasta recibirse','Un certificado intermedio','El título final'],1,'Al completar el 1.er año recibe un certificado intermedio.'],
+ ['¿Cuál es el único requisito de ingreso?',['Secundario completo','Experiencia laboral','Examen de ingreso'],0,'Secundario completo. Si lo hizo en el exterior, además necesita residencia y convalidación (DVNTyE).'],
+ ['¿Cuál es la regla de oro ante una objeción?',['Bajar el precio','Validar, rebatir y volver al cierre','Cortar y volver a llamar'],1,'Validar, rebatir y volver al cierre.'],
+ ['¿Qué hacés antes de hablar de valores?',['Mandar el link de pago','Sondear el medio de pago','Ofrecer la máxima promo'],1,'Preguntás si tiene tarjeta de crédito y de qué banco, y después mostrás la opción vigente del Portal o el Cotizador.'],
+ ['¿Con qué empresa se cocreó Marketing Digital?',['Google','HubSpot','Microsoft'],0,'Google. HubSpot es Inbound Marketing y Microsoft es Quality Assurance.'],
+ ['El lead dice «lo pienso». ¿Qué hacés?',['Le digo que me escriba cuando quiera','Pregunto la duda puntual y, si pide tiempo, agendo día y hora','Le mando todos los precios'],1,'Transformás la objeción en una duda concreta. Si igual necesita tiempo: «Mañana a las 10 te llamo y definimos, ¿dale?».'],
+ ['¿Cuándo aplica el beneficio de Amigo Referido?',['Siempre que lo pida','Solo si tiene TOKEN (entró por el formulario oficial)','Solo en efectivo'],1,'Sin TOKEN no se aplica bajo ninguna circunstancia.'],
+ ['¿Con qué carrera NO aplica la articulación con la Universidad Siglo 21?',['Programación','Seguros','Marketing Digital'],1,'Aplica a todas menos Seguros.'],
+ ['¿Qué carreras tienen reconocimiento del 1.er año por Talento Tech?',['Todas','Programación y Data Science','Ninguna'],1,'Programación y Data Science, con certificaciones de 2024 en adelante, validadas por Secretaría Académica ya inscripto.'],
+];
+let answers = {};
+function renderQuiz(){
+  $('#quizBox').innerHTML = QUIZ.map((q,i)=>`<div class="item"><b>${i+1}. ${esc(q[0])}</b><div class="opts">${q[1].map((o,j)=>`<button class="opt" data-q="${i}" data-o="${j}">${esc(o)}</button>`).join('')}</div><div class="exp" id="exp${i}">${esc(q[3])}</div></div>`).join('');
+  $$('.opt').forEach(b=>b.addEventListener('click',()=>{
+    const i=+b.dataset.q, j=+b.dataset.o; if(answers[i]!==undefined) return; answers[i]=j;
+    $$(`.opt[data-q="${i}"]`).forEach(x=>{ const k=+x.dataset.o; if(k===QUIZ[i][2]) x.classList.add('ok'); else if(k===j) x.classList.add('bad'); });
+    $('#exp'+i).style.display='block'; score();
+  }));
+  score();
+}
+function score(){ const n=Object.keys(answers).length, ok=Object.entries(answers).filter(([i,j])=>QUIZ[i][2]===j).length; $('#score').textContent = n?`Puntaje: ${ok}/${n}`:''; }
+$('#reset').addEventListener('click',()=>{answers={};renderQuiz();});
+renderQuiz();
+
+/* Navegación */
+const links = $$('nav.side a');
+const obs = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)); } }),{rootMargin:'-40% 0px -55% 0px'});
+$$('main section').forEach(s=>obs.observe(s));
+$('#menuBtn').addEventListener('click',()=>$('#nav').classList.toggle('open'));
+links.forEach(a=>a.addEventListener('click',()=>$('#nav').classList.remove('open')));
+</script>
+</body>
+</html>
